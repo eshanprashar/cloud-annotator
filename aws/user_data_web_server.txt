@@ -1,0 +1,17 @@
+#!/bin/bash -ex
+# Download the ZIP file from S3
+aws s3 cp s3://mpcs-students/eshanprashar/gas-eshanprashar.zip /home/ubuntu/gas/gas-eshanprashar.zip
+
+# Unzip the downloaded file directly into the desired directory
+unzip -o /home/ubuntu/gas/gas-eshanprashar.zip -d /home/ubuntu/gas/
+
+# Remove the ZIP file after unzipping
+rm /home/ubuntu/gas/gas-eshanprashar.zip
+
+# Change ownership to ubuntu:ubuntu
+chown -R ubuntu:ubuntu /home/ubuntu/gas/gas-eshanprashar
+
+# Run the web server app as the ubuntu user
+su -c '/home/ubuntu/gas/gas-eshanprashar/web/run_gas.sh console' - ubuntu
+
+### EOUserData
