@@ -7,12 +7,5 @@ Directory contents are as follows:
 * `/util` - Utility scripts/apps for notifications, archival, and restoration
 * `/aws` - AWS user data files
 
-### Sequence of events along with where they are handled:
-![Alt text](image.png)
-
-### Notes on Data Restoration:
-1. Using Lambda instead of directly triggering SNS: I did this to decouple the glacier-thawing job process from the restoration process. This architecture is more scalable than directly triggering SNS after the thawing process.
-
-2. Using just SNS for Lambda vs. SQS-SNS: Although I used only SNS to process thaw requests, it seems like using SQS along with lambda would have been a better design choice. One issue I faced, for example, was an inability to track incomplete jobs or the sequence of jobs. All of them seem to be done, but if I had some more time, I would figure out a way to track/monitor and think more deeply about queing of messages. Source: https://repost.aws/questions/QURliL5lCbQseTNfFiION8nA/sns-to-lambda-vs-sns-to-sqs-to-lambda. 
-
-3. More on tracking: For tracking, I also thought about adding more columns to dynamo; for example, time when an update was made to 'results_file' using the thawed_object but I did not implement anything new. Would appreciate feedback / guidance on how to ensure only messages that are processed completely are deleted ensuring everything is processed, and processed only once.
+## Data Flow diagram:
+![image](https://github.com/eshanprashar/cloud-annotator/assets/114944808/e7bc3775-be84-49a9-a72b-01df3fab6af0)
