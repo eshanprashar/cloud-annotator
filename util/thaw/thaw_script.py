@@ -5,7 +5,7 @@
 # Copyright (C) 2015-2024 Vas Vasiliadis
 # University of Chicago
 ##
-__author__ = "Vas Vasiliadis <vas@uchicago.edu>"
+__author__ = "Eshan Prashar <eshanprashar@uchicago.edu>"
 
 import boto3
 import json

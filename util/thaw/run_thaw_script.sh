@@ -4,9 +4,10 @@
 #
 # Copyright (C) 2015-2024 Vas Vasiliadis
 # University of Chicago
-#
+# Adapted for use in Genomic Annotator Service, built by Eshan Prashar, as a part of 
+# graduate coursework at the University of Chicago
+
 # Runs the Glacier thawing utility script
-#
 ##
 
 cd /home/ubuntu/gas/gas-eshanprashar/util/thaw

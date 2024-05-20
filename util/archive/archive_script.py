@@ -4,8 +4,10 @@
 #
 # Copyright (C) 2015-2023 Vas Vasiliadis
 # University of Chicago
-##
-__author__ = "Vas Vasiliadis <vas@uchicago.edu>"
+# Adapted for use in Genomic Annotator Service, built by Eshan Prashar, as a part of 
+# graduate coursework at the University of Chicago
+
+__author__ = "Eshan Prashar <eshanprashar@uchicago.edu>"
 
 import boto3
 import time

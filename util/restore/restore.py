@@ -1,3 +1,10 @@
+
+# Adapted for use in Genomic Annotator Service, built by Eshan Prashar, as a part of 
+# graduate coursework at the University of Chicago
+
+__author__ = "Eshan Prashar <eshanprashar@uchicago.edu>"
+
+
 from botocore.config import Config
 import boto3
 import json

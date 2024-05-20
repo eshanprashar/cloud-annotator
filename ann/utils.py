@@ -6,7 +6,8 @@
 #
 # Modified code copyright (C) 2015-2019 Vas Vasiliadis
 # University of Chicago
-#
+# Adapted for use in Genomic Annotator Service, built by Eshan Prashar, as a part of 
+# graduate coursework at the University of Chicago
 ##
 __author__ = "Vas Vasiliadis <vas@uchicago.edu>"
 

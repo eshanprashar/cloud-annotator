@@ -2,7 +2,9 @@
 #
 # Copyright (C) 2015-2023 Vas Vasiliadis
 # University of Chicago
-#
+# Adapted for use in Genomic Annotator Service, built by Eshan Prashar, as a part of 
+# graduate coursework at the University of Chicago
+__author__ = "Eshan Prashar <eshanprashar@uchicago.edu>"
 # Application logic for the GAS
 
 import uuid

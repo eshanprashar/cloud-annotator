@@ -1,8 +1,9 @@
 # run.py
 #
 # Runs the AnnTools pipeline
-#
 # NOTE: This file lives on the AnnTools instance
+__author__ = "Eshan Prashar <eshanprashar@uchicago.edu>"
+
 
 import sys
 import time

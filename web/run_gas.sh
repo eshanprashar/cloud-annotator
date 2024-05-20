@@ -7,6 +7,8 @@
 #
 # Runs the GAS app using a production-grade WSGI server (uwsgi)
 #
+# Adapted for use in Genomic Annotator Service, built by Eshan Prashar, as a part of 
+# graduate coursework at the University of Chicago
 ##
 
 SSL_CERT_PATH=/usr/local/src/ssl/ucmpcs.org.crt
